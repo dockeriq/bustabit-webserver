@@ -4,7 +4,13 @@ requirejs.config({
         autolinker: '../../node_modules/autolinker/dist/Autolinker',
         classnames: '../../node_modules/classnames/index',
         lodash: '../../node_modules/lodash/index',
-        react: '../../node_modules/react/dist/react-with-addons',
+        _react: '../../node_modules/react/dist/react-with-addons',
+        get react() {
+            return this._react;
+        },
+        set react(value) {
+            this._react = value;
+        },
         seedrandom: '../../node_modules/seedrandom/seedrandom',
         socketio: '../../node_modules/socket.io-client/socket.io',
         mousetrap: '../../node_modules/mousetrap/mousetrap',

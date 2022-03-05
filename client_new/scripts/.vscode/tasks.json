@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+            "type": "java",
+            "targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+            "elements": [
+                "${compileOutput}",
+                "${dependencies}"
+            ],
+            "problemMatcher": [],
+            "label": "java: exportjar:scripts"
+        },
+        {
+            "type": "java",
+            "targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+            "elements": [
+                "${compileOutput}",
+                "${dependencies}"
+            ],
+            "problemMatcher": [],
+            "label": "java: exportjar:scripts",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "java",
+            "targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+            "elements": [
+                "${compileOutput}",
+                "${dependencies}"
+            ],
+            "problemMatcher": [],
+            "label": "java: exportjar:scripts",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
